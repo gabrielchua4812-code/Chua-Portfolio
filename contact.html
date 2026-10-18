@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacts | Gabriel Chua's Portfolio</title>
+  <meta name="description" content="Portfolio of Gabriel Chua, a Computer Science student passionate about programming.">
+  <link rel="icon" href="images/Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Radley&family=Righteous&family=Roboto+Mono:wght@400;700&family=Roboto+Serif:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header site-header--plain">
+    <div class="brand">
+      <img class="brand__logo" src="images/Logo.png" alt="Gabriel Chua logo: GC with code brackets">
+      <h1 class="site-title">Gabriel Chua’s Portfolio</h1>
+    </div>
+    <nav class="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="contact.html" aria-current="page">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="">
+    <div class="contact-list">
+      <section class="contact-card" aria-labelledby="email-h">
+        <div class="contact-card__head">
+          <img src="images/Email_Icon.png" alt="" width="33" height="31">
+          <h2 class="heading-secondary" id="email-h">Email</h2>
+        </div>
+        <p><a class="text-link" href="mailto:gabrielchua4812@gmail.com">Click here</a></p>
+      </section>
+
+      <section class="contact-card" aria-labelledby="social-h">
+        <div class="contact-card__head">
+          <img src="images/Links.png" alt="" width="26" height="22">
+          <h2 class="heading-secondary" id="social-h">Social Links</h2>
+        </div>
+        <ul class="social">
+          <li><a href="https://www.facebook.com/gabriel.chua.524" target="_blank" rel="noopener" aria-label="Facebook"><img src="images/facebook_logo.png" alt=""></a></li>
+          <li><a href="https://github.com/gabrielchua4812-code" target="_blank" rel="noopener" aria-label="GitHub"><img src="images/github_logo.png" alt=""></a></li>
+          <li><a href="https://www.linkedin.com/in/gabriel-chua-0a81a942a/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="images/Linked_in_logo.png" alt=""></a></li>
+        </ul>
+      </section>
+
+      <section class="contact-card" aria-labelledby="phone-h">
+        <div class="contact-card__head">
+          <img src="images/Phone_Icon.png" alt="" width="31" height="27">
+          <h2 class="heading-secondary" id="phone-h">Phone</h2>
+        </div>
+        <p><a class="text-link" href="tel:+639498514052">+639498514052</a></p>
+      </section>
+    </div>
+
+    <h2 class="heading-primary work-title">Want to work with me?</h2>
+
+    <form class="form-card" id="contact-form" novalidate>
+      <h3 class="heading-secondary form-card__title">Fill out the following:</h3>
+
+      <div class="form-row">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" required aria-describedby="name-error">
+        <span class="status-dot" id="name-dot" aria-hidden="true"></span>
+        <span class="field-error" id="name-error" role="alert"></span>
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required aria-describedby="email-error">
+        <span class="status-dot" id="email-dot" aria-hidden="true"></span>
+        <span class="field-error" id="email-error" role="alert"></span>
+      </div>
+
+      <div class="form-row">
+        <label for="reason">Reason:</label>
+        <textarea id="reason" name="reason" placeholder="Comment your reason..."></textarea>
+        <span aria-hidden="true"></span>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn-secondary" type="submit">Submit</button>
+      </div>
+      <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">Gabriel Chua</footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
