@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Gabriel Chua's Portfolio</title>
+  <meta name="description" content="Portfolio of Gabriel Chua, a Computer Science student passionate about programming.">
+  <link rel="icon" href="images/Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Radley&family=Righteous&family=Roboto+Mono:wght@400;700&family=Roboto+Serif:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header site-header--plain">
+    <div class="brand">
+      <img class="brand__logo" src="images/Logo.png" alt="Gabriel Chua logo: GC with code brackets">
+      <h1 class="site-title">Gabriel Chua’s Portfolio</h1>
+    </div>
+    <nav class="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="">
+    <div class="search">
+      <label class="visually-hidden" for="search">Search projects</label>
+      <img class="search__icon" src="images/Search_Icon.png" alt="" width="14" height="15">
+      <input class="search__input" id="search" type="search" placeholder="Search Project..." autocomplete="off" data-filter="#project-grid">
+    </div>
+
+    <div class="card-grid" id="project-grid">
+      <article class="card" data-title="Soilitary gardening website">
+        <img class="card__media card__media--shot" src="images/soilitary.png" alt="Screenshot of the Soilitary gardening website" width="514" height="264">
+        <h2 class="card__title">Soilitary</h2>
+        <a class="btn-preview" href="https://gabrielchua4812-code.github.io/Soilitary/index.html" target="_blank" rel="noopener">Preview<span class="visually-hidden"> Soilitary (opens in a new tab)</span></a>
+      </article>
+      <article class="card card--empty" data-title="">Will Soon Add More...</article>
+      <article class="card card--empty" data-title="">Will Soon Add More...</article>
+      <article class="card card--empty" data-title="">Will Soon Add More...</article>
+    </div>
+    <p class="no-results" id="no-results" hidden>No matching items found.</p>
+
+  </main>
+
+  <footer class="site-footer">Gabriel Chua</footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
