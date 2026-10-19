@@ -12,8 +12,8 @@ The site has six pages:
 
 - **Home** – a short intro and my featured project
 - **About** – a bit about me and the tools I use (HTML, CSS, JavaScript, Python, Java, and GitHub)
-- **Projects** – my projects, with a search bar
-- **Case Studies** – my case studies, also with a search bar
+- **Projects** – my projects
+- **Case Studies** – my case studies
 - **Case Study Preview** – case studies (right now it's only a sample layout)
 - **Contacts** – my email, phone, social links, and a form if you want to work with me
 
