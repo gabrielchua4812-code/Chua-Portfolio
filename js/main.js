@@ -189,15 +189,16 @@ if (form) {
                '\nEmail: ' + emailInput.value.trim() +
                '\n\nReason:\n' + reason;
 
-    var href = 'mailto:gabrielchua4812@gmail.com' +
-               '?subject=' + encodeURIComponent('Portfolio inquiry from ' + nameInput.value.trim()) +
+    var href = 'https://mail.google.com/mail/?view=cm&fs=1' +
+               '&to=gabrielchua4812@gmail.com' +
+               '&su=' + encodeURIComponent('Portfolio inquiry from ' + nameInput.value.trim()) +
                '&body=' + encodeURIComponent(body);
 
-    message.textContent = 'Thanks, ' + nameInput.value.trim() + '! Opening your email app to send the message...';
+    message.textContent = 'Thanks, ' + nameInput.value.trim() + '! Opening Gmail to send the message...';
     message.className = 'form-message is-success';
 
-    // open the email app, then clear the form
-    window.location.href = href;
+    // open Gmail in a new tab, then clear the form
+    window.open(href, '_blank');
     form.reset();
 
     // reset the green dots, borders and errors for both fields
